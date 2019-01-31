@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# download gene annotatino, protein sequences, genome seq.
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.gff.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_protein.faa.gz
+
+gunzip GCF_000005845.2_ASM584v2_*
+
+# get busco gene set
+wget --no-check-certificate https://busco.ezlab.org/datasets/enterobacteriales_odb9.tar.gz && tar -zxf enterobacteriales_odb9.tar.gz
+
