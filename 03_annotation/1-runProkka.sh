@@ -14,10 +14,10 @@ module load prokka
 
 set -vex
 
-inFile80x='../01_assembly/ecoli_assembly-SRR2627019_80x/scaffolds.fasta'
+inFile='../01_assembly/ecoli_assembly-SRR2627019_40x/scaffolds.fasta'
 protFile='../data/GCF_000005845.2_ASM584v2_protein.faa'
 
-prokka --outdir ecoli_assembly-SRR2627019_80x_prokka --proteins $protFile --usegenus --addgenes \
+prokka --outdir ecoli_assembly-SRR2627019_40x_prokka --proteins $protFile --usegenus --addgenes \
 --kingdom Bacteria --genus Escherichia --species coli --strain KAUST --plasmid plasmid \
-$inFile80x  > prokka.log 2>&1
+$inFile  > prokka.log 2>&1
 

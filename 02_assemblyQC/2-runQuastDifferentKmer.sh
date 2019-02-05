@@ -14,5 +14,5 @@ module load quast
 
 set -vex
 
-quast.py ../01_assembly/ecoli_assembly-SRR2627019_80x/K*/final_contigs.fasta -t 5  -R GCF_000005845.2_ASM584v2_genomic.fna \
+quast.py ../01_assembly/ecoli_assembly-SRR2627019_40x/K*/final_contigs.fasta -t 5  -R GCF_000005845.2_ASM584v2_genomic.fna \
 -G GCF_000005845.2_ASM584v2_genomic.gff --scaffolds > ecoli_quast.log

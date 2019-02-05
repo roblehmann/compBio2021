@@ -14,8 +14,8 @@ set -vex
 
 module load kat
 
-# ecoli 80x read dataset
+# ecoli 40x read dataset
 outDir="output"
 
-kat gcp -m 57 -t 2 -o ${outDir}/SRR2627019.1m.80x -p pdf ../data/SRR2627019.1m.80xR1.fq.gz ../data/SRR2627019.1m.80xR2.fq.gz \
-> ${outDir}/kat_SRR2627019.1m.80x.log
+kat gcp -m 57 -t 2 -o ${outDir}/SRR2627019.1m.40x -p pdf ../data/SRR2627019.1m.40xR1.fq.gz ../data/SRR2627019.1m.40xR2.fq.gz \
+> ${outDir}/kat_SRR2627019.1m.40x.log

@@ -15,7 +15,7 @@ module load quast
 set -vex
 
 # collect different assemblies for comparison
-ln -s ../01_assembly/ecoli_assembly-SRR2627019_80x/scaffolds.fasta ecoli_SRR2627019_scaffolds_80x.fasta
+ln -s ../01_assembly/ecoli_assembly-SRR2627019_40x/scaffolds.fasta ecoli_SRR2627019_scaffolds_40x.fasta
 
 # get reference genome assembly with gene annotation
 ln -s ../data/GCF_000005845.2_ASM584v2* .

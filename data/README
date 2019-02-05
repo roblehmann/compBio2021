@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# download gene annotatino, protein sequences, genome seq.
+# download small version of kraken2 database
+wget https://ccb.jhu.edu/software/kraken2/dl/minikraken2_v2_8GB.tgz && tar -zxf minikraken2_v2_8GB.tgz
+
+# download gene annotation, protein sequences, genome seq. for comparison of our results
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.gff.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_protein.faa.gz
 
 gunzip GCF_000005845.2_ASM584v2_*
 
-# get busco gene set
+# get busco gene set database to assess completeness of our assmbly candidates
 wget --no-check-certificate https://busco.ezlab.org/datasets/enterobacteriales_odb9.tar.gz && tar -zxf enterobacteriales_odb9.tar.gz
 

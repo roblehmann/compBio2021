@@ -14,8 +14,8 @@ module load spades
 
 set -vex
 
-# run assembler on trimmed 80x ecoli data
-spades.py -m30 -t5 -o ./ecoli_assembly-SRR2627019_80x \
--1 ../00_inputQC/output/SRR2627019.1m.80x_trimmed_R1.fq.gz \
--2 ../00_inputQC/output/SRR2627019.1m.80x_trimmed_R2.fq.gz \
-> spades_ecoli_80x.log
+# run assembler on trimmed 40x ecoli data
+spades.py -m30 -t5 -o ./ecoli_assembly-SRR2627019_40x \
+-1 ../00_inputQC/output/SRR2627019.1m.40x_trimmed_R1.fq.gz \
+-2 ../00_inputQC/output/SRR2627019.1m.40x_trimmed_R2.fq.gz \
+> spades_ecoli_40x.log
