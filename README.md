@@ -1,4 +1,4 @@
-# Computational Bioscience & Machine Learning 2018/2019 - KAUST
+# Computational Bioscience & Machine Learning 2020 - KAUST
 ## Practical Session: Genome Assembly
 
 ### Structure
