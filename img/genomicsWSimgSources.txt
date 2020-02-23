@@ -1,0 +1,5 @@
+E.coli: John Archer/CDC
+E.coli Genome: https://science.sciencemag.org/content/277/5331/1453
+Tardigrade: 3DSTOCK/SHUTTERSTOCK
+Illumina Chip: https://www.illumina.com/company/news-center/multimedia-images.html
+PacBio Chip: https://research.pasteur.fr/wp-content/uploads/2015/02/research_pasteur-genomics-poster_jdd_2017_pacbio_va4.pdf

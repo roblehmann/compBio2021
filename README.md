@@ -1,9 +1,18 @@
-# Computational Bioscience & Machine Learning 2020 - KAUST
-## Practical Session: Genome Assembly
+# Computational Bioscience & Machine Learning - KAUST 2020
+## Genome Assembly
+![Genome Assembly Workshop](/img/genomicsWSimg.png?raw=true)
+
+### Table of contents
+  * [Module Structure](https://github.com/roblehmann/compBio2020#structure)
+  * [Data](https://github.com/roblehmann/compBio2020#data)
+  * [Software used in this module](https://github.com/roblehmann/compBio2020#software)
+  * [Software Prerequisits on Laptop](https://github.com/roblehmann/compBio2020#software-prerequisits)
+
+  Check out the [Wiki](https://github.com/roblehmann/compBio2020/wiki) for a guide how to run the scripts, use the shell, access the Ibex cluster.
 
 ### Structure
 
-1. Quality control on input data 
+1. Quality control on input data
 2. Assembling a small genome sequence
 3. Assembly QC
 4. Annotating genes 
@@ -13,7 +22,7 @@
 ### Data
 
 1.	The first data set is from the bacterium E. coli, for which the public NCBI data set SRR2627019 contains 250bp long paired end Illumina MiSeq reads. It is the basis for the paper “**Barroso-Batista, J., Demengeot, J., & Gordo, I. (2015). Adaptive immunity increases the pace and predictability of evolutionary change in commensal gut bacteria. Nature Communications, 6, 8945.** [http://doi.org/10.1038/ncomms9945]”. While the genome of E.coli is 4.6 megabases (Mb) large ([https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521]), we will use only reads originating from the first 1 Mb as to speed up analyses steps and assemblies. The two paired end files can be found in the data folder and are called:  
-SRR2627019.1m.40xR2.fq.gz 
+SRR2627019.1m.40xR2.fq.gz
 SRR2627019.1m.40xR2.fq.gz
 You will also find additional files, SRR2627019.1m.10xR1.fq.gz, SRR2627019.1m.20xR1.fq.gz, SRR2627019.1m.40xR1.fq.gz, …, which correspond to the same genomic region but different numbers of reads. The task is to figure out how the coverage influences the assembly result.
 
@@ -24,6 +33,21 @@ A good review on long read sequencing and bioinformatics is by **Sedlazeck FJ, L
 tardigrade_SRR2986339_subsampled_1.fq.gz
 tardigrade_SRR2986339_subsampled_2.fq.gz
 
+### Software Prerequisits
+
+  * Required Software on local computer:
+    * Terminal
+    * ssh
+    * scp / sftp / putty (scp+sftp preinstalled on Linux/Mac, putty popular Win implementation)
+    * git (optional, if you want to work on your own machine or obtain the scripts)
+  * Access KAUST’s High-performance-computing cluster Ibex:
+    * See https://www.hpc.kaust.edu.sa/ibex
+    * ssh <user>@alogin.ibex.kaust.edu.sa
+    * https://www.hpc.kaust.edu.sa/ibex/how-login
+  * obtain datasets and sources from github:
+    * open terminal
+    * cd <course_dir>
+    * git clone https://github.com/roblehmann/compBio2020
 
 ### Software
 
