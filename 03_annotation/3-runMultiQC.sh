@@ -17,4 +17,4 @@ set -vex
 mkdir -p busco_output
 find `pwd`/run* -name "short*" -exec ln -sf {} busco_output/ \;
 
-multiqc busco_output
+multiqc -o prokka_busco_varCovComp_multiqc busco_output

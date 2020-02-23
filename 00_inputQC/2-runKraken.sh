@@ -15,5 +15,5 @@ module load kraken2
 set -vex
 
 kraken2 --db ../data/ --threads 4 --gzip-compressed --paired \
---report output/ecoli_kraken2_report.txt --output - \
+--report output/ecoli_40x_kraken2_report.txt --output - \
 ../data/SRR2627019.1m.40xR1.fq.gz ../data/SRR2627019.1m.40xR2.fq.gz

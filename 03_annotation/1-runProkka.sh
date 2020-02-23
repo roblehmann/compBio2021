@@ -16,8 +16,9 @@ set -vex
 
 inFile='../01_assembly/ecoli_assembly-SRR2627019_40x/scaffolds.fasta'
 protFile='../data/GCF_000005845.2_ASM584v2_protein.faa'
+outDir='ecoli_assembly-SRR2627019_40x_prokka'
 
-prokka --outdir ecoli_assembly-SRR2627019_40x_prokka --proteins $protFile --usegenus --addgenes \
+prokka --outdir $outDir --proteins $protFile --usegenus --addgenes \
 --kingdom Bacteria --genus Escherichia --species coli --strain KAUST --plasmid plasmid \
 $inFile  > prokka.log 2>&1
 

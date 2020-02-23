@@ -14,7 +14,7 @@ module load busco
 
 set -vex
 
-inFile='ecoli_assembly-SRR2627019_40x_prokka/PROKKA_01302019.faa'
+inFile=$(ls ecoli_assembly-SRR2627019_40x_prokka/PROKKA*.faa)
 outPref='ecoli_40x_prokka'
 lib='../data/enterobacteriales_odb9'
 
