@@ -48,6 +48,7 @@ tardigrade_SRR2986339_subsampled_2.fq.gz
     * open terminal
     * cd <course_dir>
     * git clone https://github.com/roblehmann/compBio2020
+    * cd data && bash copyDataFromIbex.sh
 
 ### Software
 
