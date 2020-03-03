@@ -10,7 +10,7 @@
 # BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs
 # https://academic.oup.com/bioinformatics/article/31/19/3210/211866
 
-module load busco
+module load busco/3.0
 
 set -vex
 
