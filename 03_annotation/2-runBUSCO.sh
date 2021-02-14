@@ -16,7 +16,7 @@ set -vex
 
 inFile=$(ls ecoli_assembly-SRR2627019_40x_prokka/PROKKA*.faa)
 outPref='ecoli_40x_prokka'
-lib='../data/enterobacteriales_odb9'
+lib='../data/enterobacterales_odb10'
 
 run_BUSCO.py -i $inFile -o $outPref -l $lib -c 5 -sp E_coli_K12 -m prot > ecoli_40x_busco.log 2>&1
 
