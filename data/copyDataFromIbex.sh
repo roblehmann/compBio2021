@@ -1,6 +1,6 @@
 #!/bin/bash
 
-inPath='/ibex/scratch/projects/c2024/labcourse2020_genomics_data'
+inPath='/ibex/scratch/projects/c2024/labcourse2021_genomics_data'
 
 cp ${inPath}/Practical_Manual.pdf .
 
@@ -10,9 +10,9 @@ cp ${inPath}/GCF_000005845.2_ASM584v2* .
 
 # get busco gene set database to assess completeness of our assmbly candidates
 echo 'copying busco files...'
-cp -r ${inPath}/enterobacteriales_odb9 .
+cp -r ${inPath}/enterobacterales_odb10 .
 
 # copy small version of kraken2 database
 echo "copying Kraken2 files..."
-cp ${inPath}/*k2d .
+cp -r ${inPath}/minikraken_8GB_20200312 .
 
