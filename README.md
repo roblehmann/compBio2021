@@ -1,14 +1,14 @@
-# Computational Bioscience & Machine Learning - KAUST 2020
+# Computational Bioscience & Machine Learning - KAUST 2021
 ## Genome Assembly
 ![Genome Assembly Workshop](/img/genomicsWSimg.png?raw=true)
 
 ### Table of contents
-  * [Module Structure](https://github.com/roblehmann/compBio2020#structure)
-  * [Data](https://github.com/roblehmann/compBio2020#data)
-  * [Software used in this module](https://github.com/roblehmann/compBio2020#software)
-  * [Software Prerequisits on Laptop](https://github.com/roblehmann/compBio2020#software-prerequisits)
+  * [Module Structure](https://github.com/roblehmann/compBio2021#structure)
+  * [Data](https://github.com/roblehmann/compBio2021#data)
+  * [Software used in this module](https://github.com/roblehmann/compBio2021#software)
+  * [Software Prerequisits on Laptop](https://github.com/roblehmann/compBio2021#software-prerequisits)
 
-  Check out the [Wiki](https://github.com/roblehmann/compBio2020/wiki) for a guide how to run the scripts, use the shell, access the Ibex cluster.
+  Check out the [Wiki](https://github.com/roblehmann/compBio2021/wiki) for a guide how to run the scripts, use the shell, access the Ibex cluster.
 
 ### Structure
 
@@ -47,7 +47,7 @@ tardigrade_SRR2986339_subsampled_2.fq.gz
   * obtain datasets and sources from github:
     * open terminal
     * cd <course_dir>
-    * git clone https://github.com/roblehmann/compBio2020
+    * git clone https://github.com/roblehmann/compBio2021
     * cd data && bash copyDataFromIbex.sh
 
 ### Software
